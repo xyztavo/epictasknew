@@ -14,7 +14,13 @@ public class TaskController {
 
     @GetMapping
     public String listTasks() {
-        var tasks = List.of(new Task(1L, "Criar banco de dados", "Criar banco de dados mysql", 50, 0);, task2, task);
+        var tasks = List.of(
+            
+        new Task(1L, "Criar banco de dados", "Criar banco de dados mysql",50, 0);
+        new Task(2L, "Prototipo", "Montar o figma",40, 0);
+        new Task(3L, "Deploy", "Colocar em producao",100, 0);
+        
+        );
 
         return "tasks";
     }
